@@ -10,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.app.Activity;
 
+import java.io.IOException;
+
 import eu.chainfire.libsuperuser.Shell;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,7 +32,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-//                String[] command = {"su", "-u", "ls"};
+                try {
+                    Runtime.getRuntime().exec("su -c 'chown adb /system'");
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                String[] command = {"su", "-u", "ls"};
 //                Shell.run()
 //                Shell.run("shell", ["su -u"], )
 
