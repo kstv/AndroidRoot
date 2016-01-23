@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String[] command = {"su", "-u", "ls"};
+//                String[] command = {"su", "-u", "ls"};
 //                Shell.run()
 //                Shell.run("shell", ["su -u"], )
 
