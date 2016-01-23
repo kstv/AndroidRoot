@@ -9,10 +9,11 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.app.Activity;
+import android.widget.Button;
 
 import java.io.IOException;
 
-import eu.chainfire.libsuperuser.Shell;
+import eu.chainfire.libsuperuser.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,27 +26,35 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener((view) -> {
+            try{
+                Runtime.getRuntime().exec("su -c 'chown adb /system'");
+                Shell.Builder sb = new Shell.Builder();
+
+                Toolbox.init();
+            } catch (IOException e){
+                e.printStackTrace();
+            }
+        });
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        fab.setOnClickListener(view -> {
 
-                try {
-                    Runtime.getRuntime().exec("su -c 'chown adb /system'");
+            try {
+                Runtime.getRuntime().exec("su -c 'chown adb /system'");
 
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
-                String[] command = {"su", "-u", "ls"};
+            String[] command = {"su", "-u", "ls"};
 //                Shell.run()
 //                Shell.run("shell", ["su -u"], )
 
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         });
     }
 
