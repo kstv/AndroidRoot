@@ -52,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
             String[] command = {"su", "-u", "ls"};
 //                Shell.run()
 //                Shell.run("shell", ["su -u"], )
+                String shell = "su";
+                String [] commands = {};
+                String[] env = {};
+                Boolean stderr = false;
+                Shell.run(shell, commands, env, false);
 
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
