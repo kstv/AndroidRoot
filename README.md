@@ -94,3 +94,4 @@ http://su.chainfire.eu/
 4. http://stackoverflow.com/questions/4846241/more-than-one-superuser-command-android/4846312
 5. https://code.google.com/p/market-enabler/wiki/ShellCommands
 6. http://stackoverflow.com/questions/3635101/how-to-sign-android-app-with-system-signature
+7. https://github.com/android/platform_system_core/tree/master/adb < customize
