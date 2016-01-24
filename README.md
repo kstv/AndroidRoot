@@ -29,6 +29,8 @@
  7. [GUIDE][COMPLETE] Android ROM Development From Source To End   
  http://forum.xda-developers.com/chef-central/android/guide-android-rom-development-t2814763
  
+ 8. Backup *.img
+ http://www.modaco.com/forums/topic/327661-how-to-backup-the-systemimg-bootimg-and-recoveryimg/?do=findComment&comment=1534006
  
  
 #### Extra - Lets Install CyanogenMod:
@@ -84,3 +86,11 @@ https://github.com/Chainfire/libsuperuser
 
 7. Manual
 http://su.chainfire.eu/
+
+### Gaining ROOT privileges
+1. http://stackoverflow.com/questions/16534872/writing-an-root-application
+2. http://stackoverflow.com/questions/4905743/android-how-to-gain-root-access-in-an-android-application
+3. http://muzikant-android.blogspot.com/2011/02/how-to-get-root-access-and-execute.html
+4. http://stackoverflow.com/questions/4846241/more-than-one-superuser-command-android/4846312
+5. https://code.google.com/p/market-enabler/wiki/ShellCommands
+6. http://stackoverflow.com/questions/3635101/how-to-sign-android-app-with-system-signature
