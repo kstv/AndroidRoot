@@ -75,3 +75,12 @@ http://www.xda-developers.com/how-to-build-an-android-app-part-2-writing-a-root-
             compile 'com.android.support:design:23.1.1'
             compile 'eu.chainfire:libsuperuser:1.0.0.+'
         }
+
+5. Creating Android Root App
+http://themakeinfo.com/2015/05/building-android-root-app/
+
+6. Sources on github
+https://github.com/Chainfire/libsuperuser
+
+7. Manual
+http://su.chainfire.eu/
