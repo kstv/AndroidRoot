@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener((view) -> {
             try{
                 Runtime.getRuntime().exec("su -c 'chown adb /system'");
-                Shell.Builder sb = new Shell.Builder();
 
-                Toolbox.init();
+
+
             } catch (IOException e){
                 e.printStackTrace();
             }
@@ -42,21 +42,21 @@ public class MainActivity extends AppCompatActivity {
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(view -> {
 
-            try {
-                Runtime.getRuntime().exec("su -c 'chown adb /system'");
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            String[] command = {"su", "-u", "ls"};
-//                Shell.run()
-//                Shell.run("shell", ["su -u"], )
-                String shell = "su";
-                String [] commands = {};
-                String[] env = {};
-                Boolean stderr = false;
-                Shell.run(shell, commands, env, false);
+//            try {
+//                Runtime.getRuntime().exec("su -c 'chown adb /system'");
+//
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//
+//            String[] command = {"su", "-u", "ls"};
+////                Shell.run()
+////                Shell.run("shell", ["su -u"], )
+//                String shell = "su";
+//                String [] commands = {};
+//                String[] env = {};
+//                Boolean stderr = false;
+//                Shell.run(shell, commands, env, false);
 
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
