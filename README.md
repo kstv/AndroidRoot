@@ -87,6 +87,7 @@ https://github.com/Chainfire/libsuperuser
 7. Manual
 http://su.chainfire.eu/
 http://themakeinfo.com/2015/05/building-android-root-app/
+http://forum.xda-developers.com/showpost.php?p=58226976&postcount=133
 
 ### Gaining ROOT privileges
 1. http://stackoverflow.com/questions/16534872/writing-an-root-application
