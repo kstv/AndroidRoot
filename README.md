@@ -83,6 +83,7 @@ http://themakeinfo.com/2015/05/building-android-root-app/
 
 6. Sources on github
 https://github.com/Chainfire/libsuperuser
+https://github.com/SpazeDog/rootfw/wiki
 
 7. Manual
 http://su.chainfire.eu/
