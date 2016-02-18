@@ -1,4 +1,4 @@
 # AndroidRoot
 
-## HTC - WildFire (bez S) :)
+## HTC - WildFire (bez S)  :)
 
